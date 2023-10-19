@@ -49,8 +49,12 @@ abline(Model1, col = "red")
 
 For an increase of 1 in arm strength, sim score increases by 0.0540
 
+```{r}
+newdata =  data.frame(ARM = 88, GRIP = 94)
+predict.lm(Model1,newdata, interval = 'prediction')
+```
 
-# Model 2
+## Model 2
 
 Find an equation that expresses SIMS as a function of GRIP strength
 
@@ -85,7 +89,12 @@ abline(Model2, col = "blue")
 
 For an increase of 1 in grip strength, sim score increases by 0.0450
 
-# Model 3
+```{r}
+newdata =  data.frame(ARM = 88, GRIP = 94)
+predict.lm(Model2,newdata, interval = 'prediction')
+```
+
+## Model 3
 
 ## Results
 
