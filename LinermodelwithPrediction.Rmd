@@ -44,7 +44,12 @@ print(summary(Model1))
 
 ```{r}
 plot(SIMS~ARM,data=data)
-abline(Model1)
+abline(Model1, col = "red")
 ```
+
+For an increase of 1 in arm strength, sim score increases by 0.0540
+
+
+# Model 2
 
 
