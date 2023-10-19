@@ -96,12 +96,29 @@ predict.lm(Model2,newdata, interval = 'prediction')
 
 ## Model 3
 
+Find an equation that expresses SIMS as a function of ARM+GRIP strength
+
 ## Results
 
 ### Graphical Results
 
+There are no Graphical results for Model3 because there can not be two variables on one axis
+
 ### Numerical Results
 
+There are no Numerical results since we have SIM as a function of two variables
+
 ### Infrence
+
+```{r}
+Model3 = lm(SIMS~ARM+GRIP, data = data)
+print(summary(Model3))
+```
+
+
+```{r}
+newdata =  data.frame(ARM = 88, GRIP = 94)
+predict.lm(Model3,newdata, interval = 'prediction')
+```
 
 
