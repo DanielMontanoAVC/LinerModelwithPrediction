@@ -52,4 +52,47 @@ For an increase of 1 in arm strength, sim score increases by 0.0540
 
 # Model 2
 
+Find an equation that expresses SIMS as a function of GRIP strength
+
+## Results
+
+### Graphical Results
+
+```{r}
+plot(SIMS~GRIP,data=data)
+```
+
+As arm grip increases, the sim score increases. There is a positive trend in grip strength and sim score.
+
+### Numerical Results
+
+```{r}
+cor(data$SIMS, data$GRIP)
+```
+We have a positive coloration, with a considerable amount of extra noise
+
+### Infrence
+
+```{r}
+Model2 = lm(SIMS~GRIP, data = data)
+print(summary(Model2))
+```
+
+```{r}
+plot(SIMS~GRIP,data=data)
+abline(Model2, col = "blue")
+```
+
+For an increase of 1 in grip strength, sim score increases by 0.0450
+
+# Model 3
+
+## Results
+
+### Graphical Results
+
+### Numerical Results
+
+### Infrence
+
 
